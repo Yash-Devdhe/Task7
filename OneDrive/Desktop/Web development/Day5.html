@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Responsive Design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <!-- 5vh will take 5% height of total webpage -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            border: 1px solid black;
+            height: 5vh;
+            background-color: black;
+        }
+
+        .container {
+            border: 2px solid red;
+            display: flex;
+        }
+
+        .Content {
+            border: 1px solid blue;
+            height: 90vh;
+            width: 75vw;
+            padding: 10px;
+        }
+
+        .leftNav {
+            border: 1px solid Green;
+            height: 90vh;
+            width: 30vw;
+        }
+
+        .footer {
+            border: 1px solid black;
+            height: 5vh;
+        }
+
+        .navItems {
+            display: flex;
+            list-style: none;
+            margin-top: 0.5vh;
+            align-items: center;
+        }
+
+        .navItem {
+            margin: 10px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .leftNavItems {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            margin: 0px auto;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10vh;
+            padding-left: 2rem;
+        }
+
+        .leftNavItem {
+            border: 1px solid lightblue;
+            width: 20vw;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        .leftNavItem:hover {
+            background-color: grey;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Content >img {
+            width: 64vw;
+           
+
+        }
+
+        @media(max-width:600px) {
+            .header {
+                height: 10vh
+            }
+
+            .navItems {
+                flex-wrap: wrap;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .leftNav{
+                width:100vw;
+                height: fit-content;
+            }
+            .leftNavItem{
+                width: 70vw;
+                margin-top: 0px;
+            }
+            .leftNavItems{
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .Content{
+                width: 95vw;
+
+            }
+            .Cotent >img{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="navItems">
+            <li class="navItem">Home</li>
+            <li class="navItem">About</li>
+            <li class="navItem">Media</li>
+            <li class="navItem">Contact</li>
+            <li class="navItem">Login</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="leftNav">
+            <UL class="leftNavItems">
+                <li class="leftNavItem">HTML</li>
+                <li class="leftNavItem">CSS</li>
+                <li class="leftNavItem">Javascript</li>
+                <li class="leftNavItem">React JS</li>
+                <li class="leftNavItem">Redux</li>
+                <li class="leftNavItem">Node.js</li>
+                <li class="leftNavItem">MongoDB</li>
+                <li class="leftNavItem">Express JS</li>
+            </UL>
+        </div>
+        <div class="Content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, neque necessitatibus voluptate possimus
+                perspiciatis aperiam porro quasi hic, provident, molestiae blanditiis? Expedita amet reprehenderit
+                numquam rerum, officia laudantium excepturi vero, odit aperiam, dolor saepe quia! Odio magnam,
+                voluptatum beatae neque aperiam dolores corporis eligendi nisi voluptatibus ut, assumenda inventore
+                possimus minus ipsa, dolor maxime officiis repellat illum sint numquam cumque quisquam incidunt ullam.
+                Odit repudiandae debitis quas assumenda, quia iusto velit cumque dolore sequi fugiat deserunt commodi
+                delectus! Recusandae accusantium, illo facere, a magni consequatur vero laborum aliquam, architecto unde
+                tempora voluptatem facilis magnam voluptatum error perspiciatis repudiandae repellat. Vel.</p>
+            <img src="./black_queen.ico" alt="image">
+        </div>
+
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+
+</html>

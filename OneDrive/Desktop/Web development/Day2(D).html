@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists in Html</title>
+</head>
+<body>
+    <style>
+        /* Page & list base */
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            color: #333;
+            background: #fafafa;
+            padding: 20px;
+        }
+        ol, ul, dl { margin: 0 0 1rem 1.5rem; padding: 0; }
+
+        /* Styled ordered list (the selected one) */
+        ol[type="1"] {
+            list-style: none;              /* hide default numbers */
+            counter-reset: item;
+            padding-left: 0;
+            max-width: 420px;
+        }
+        ol[type="1"] li {
+            counter-increment: item;
+            position: relative;
+            background: #f1f8ff;
+            margin: 0.35rem 0;
+            padding: 0.5rem 0.75rem 0.5rem 3.2rem;
+            border-radius: 6px;
+            border: 1px solid #e6f0ff;
+        }
+        ol[type="1"] li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0b63d6;
+            color: #fff;
+            width: 1.9rem;
+            height: 1.9rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+        }
+
+        /* Upper-alpha ordered list (existing ol type="A") */
+        ol[type="A"] { list-style: upper-alpha inside; color: #b03a2e; }
+
+        /* Unordered lists styling */
+        ul[type="o"] { list-style: circle inside; color: #27ae60; }
+        ul[type="square"] { list-style: square inside; color: #8e44ad; }
+
+        /* Custom "Rectangle" handling (type attribute isn't standard for ul) */
+        ul[type="Rectangle"] {
+            list-style: none;
+            padding-left: 0;
+            max-width: 420px;
+        }
+        ul[type="Rectangle"] li {
+            background: #fff7e6;
+            margin: 0.3rem 0;
+            padding: 0.45rem 0.75rem;
+            border-radius: 5px;
+            border: 1px solid #fde3b7;
+        }
+
+        /* Description list */
+        dl {
+            background: #fff;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            max-width: 560px;
+        }
+        dt { font-weight: 700; margin-top: 0.5rem; }
+        dd { margin: 0 0 0.6rem 1rem; color: #555; }
+    </style>
+
+    <!DOCTYPE Ordered Lists>
+    <ol type="1">
+        <li>Aayan</li>
+        <li>Manoj</li>
+        <li>Suraj</li>
+    </ol>
+    <ol type="A">
+        <li>Salt</li>
+        <li>Sugar</li>
+        <li>Oil</li>
+    </ol>
+     <!DOCTYPE Unordered Lists>
+    <ul type="o"><!DOCTYPE type=o,circle,disc,square>
+        <li>Masala Dosa</li>
+        <li>Pizza</li>
+        <li>Samosa</li>
+        <li>Pani Puri</li>
+    </ul>
+     <ul type="square">
+        <li>Masala Dosa</li>
+        <li>Pizza</li>
+        <li>Samosa</li>
+        <li>Pani Puri</li>
+    </ul>
+         <ul type="Rectangle">
+        <li>Masala Dosa</li>
+        <li>Pizza</li>
+        <li>Samosa</li>
+        <li>Pani Puri</li>
+    </ul>
+    <!DOCTYPE Description Lists>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+</body>
+</html>

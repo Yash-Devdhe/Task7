@@ -1,0 +1,26 @@
+.video{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.navlist{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+.item a{
+    margin-right: 3rem;
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    font-size: 18px;
+
+}

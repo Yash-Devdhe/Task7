@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- If we gave all CSS then lowest css style will be applied to the attribute -->
+ <!-- lowest css in head tag code has highest priority means last css will be applied -->
+  <!-- in this code external css is lowest in head so it has highest priority -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Styling in webpage</title>
+    <!-- Internal CSS -->
+     <style>
+        h2{
+            background-color: aqua;
+            border-color: blueviolet;
+        }
+     </style>
+     <!-- External CSS -->
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+     <!-- Block level border -->
+    <h1> <p style="border: 1px solid black; color:Yellow; ">Hello, Good Morning</p></h1>
+    <!-- Line level Border -->
+     <span style="border: 1px solid black; color: Yellow;">Hello World</span> 
+</body>
+</html>

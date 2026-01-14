@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yash Devdhe</title>
+
+    <link rel="icon" type="image/png" href="./black_queen.ico" />
+    <script src="https://kit.fontawesome.com/3985af32f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="StyleDay4.css" />
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+            font-family:Arial, sans-serif;
+            color:#333;
+            min-height:100vh;
+            padding:2rem;
+        }
+
+        .container{
+            background:rgba(255,255,255,0.95);
+            padding:2rem;
+            border-radius:10px;
+            max-width:1100px;
+            margin:0 auto;
+            box-shadow:0 8px 32px rgba(0,0,0,.2);
+        }
+
+        /* NAVBAR: center items, keep icons and text aligned vertically, wrap on small screens */
+        .navbar{
+            background:rgba(0,0,0,.8);
+            padding:.6rem;
+            border-radius:8px;
+            margin-bottom:1.25rem;
+        }
+
+        .navlist{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            align-items:center;       /* vertically center icon + text */
+            gap:1.25rem;
+            flex-wrap:wrap;          /* allow wrapping on small screens */
+            padding:0;
+            margin:0;
+        }
+
+        .navlist .item{ list-style:none; }
+
+        .item a{
+            color:#fff;
+            text-decoration:none;
+            display:inline-flex;
+            align-items:center;
+            gap:.5rem;
+            padding:.45rem .7rem;
+            border-radius:6px;
+            font-weight:500;
+            transition:color .2s, background .2s, transform .08s;
+        }
+
+        .item a:hover{
+            color:#667eea;
+            background:rgba(255,255,255,.04);
+            transform:translateY(-1px);
+        }
+
+        /* Heading & text */
+        h1{ color:#667eea; margin-bottom:.5rem; font-size:1.8rem; }
+        p{ color:#555; margin-bottom:1rem; }
+
+        /* MEDIA (video + audio) centered and responsive */
+        .media-wrap{
+            display:flex;
+            flex-direction:column;
+            gap:1rem;
+            align-items:center;
+            margin-top:1rem;
+        }
+
+        video.video{
+            width:100%;
+            max-width:960px;
+            height:auto;
+            display:block;
+            border-radius:10px;
+            box-shadow:0 6px 20px rgba(0,0,0,.25);
+        }
+
+        audio{
+            width:100%;
+            max-width:640px;
+            display:block;
+            border-radius:8px;
+            box-shadow:0 4px 12px rgba(0,0,0,.15);
+            background:#fff;
+            padding:6px;
+        }
+
+        /* small screen tweaks */
+        @media (max-width:480px){
+            .item a{ padding:.4rem .5rem; font-size:.95rem }
+            h1{ font-size:1.4rem }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="navlist">
+                <li class="item"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="item"><a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> About</a></li>
+                <li class="item"><a href="#">Projects</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="item"><a href="#"><i class="fa-regular fa-user"></i> Login</a></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign up</a></li>
+            </ul>
+        </div>
+
+        <h1>Yash Devdhe</h1>
+        <p>Welcome to my portfolio! Here you can find my projects and information</p>
+
+        <div class="media-wrap">
+            <video src="./3571264-uhd_3840_2160_30fps.mp4" class="video" controls></video>
+            <audio src="./60548788_female-passion-emotional-tension_by_foleymaker_preview.mp3" controls></audio>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <!-- Margin=gap between inside box and screen page-->
+    <!-- Padding=gap between text and border inside box -->
+    <Style>
+        input{
+           margin-left: 50px;
+        
+            height: 5vw;
+            width: 300px;
+            border-radius: 10%;
+        }
+        label{
+
+        }
+    </Style>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="user">Name: </label>
+        <input type="text" id="user" placeholder="Enter your name">
+        <br><br>
+        <label for="Email">Email: </label>
+        <input type="text" id="Email" placeholder="Enter your Email">
+        <br><br>
+         <label for="Password">Password: </label>
+        <input type="password" id="Password" >
+        <br><br>
+        <label for="subject">Subject</label>
+        <select id="subject">
+            <option value="">Choose a Subject</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+        </select>
+        <label for=""></label>
+        <input type="text" name="" id="class" list="class-option">
+        <datalist id="class-option">
+            <option value="10th"></option>
+            <option value="12th"></option>
+        </datalist>
+        <button>Submit</button>
+    </form>
+
+    
+</body>
+</html>
